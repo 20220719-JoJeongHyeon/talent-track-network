@@ -2,65 +2,54 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      color: "text-orange-500",
+      title: "BackEnd",
+      color: "text-green-700",
       skills: [
-        { name: "Next.js", color: "bg-black text-white" },
-        { name: "React", color: "bg-blue-400 text-white" },
-        { name: "Vue", color: "bg-green-500 text-white" },
-        { name: "Angular", color: "bg-red-500 text-white" },
-        { name: "Apollo", color: "bg-purple-500 text-white" },
-        { name: "GraphQL", color: "bg-pink-500 text-white" },
-        { name: "React Query", color: "bg-red-400 text-white" },
-        { name: "Redux", color: "bg-purple-600 text-white" },
-        { name: "Recoil", color: "bg-blue-600 text-white" },
-        { name: "Zustand", color: "bg-orange-500 text-white" },
-        { name: "Styled-Components", color: "bg-pink-400 text-white" },
-        { name: "Storybook", color: "bg-red-600 text-white" }
+        { name: "Java", color: "bg-green-900 text-white" },
+        { name: "Spring Boot", color: "bg-green-800 text-white" },
+        { name: "Spring Security", color: "bg-emerald-700 text-white" },
+        { name: "MariaDB", color: "bg-cyan-900 text-white" },
+        { name: "MySQL", color: "bg-blue-900 text-white" },
+        { name: "Mybatis", color: "bg-yellow-900 text-white" },
+        { name: "Jpa", color: "bg-purple-900 text-white" },
       ]
     },
     {
       title: "Basic",
-      color: "text-orange-500",
+      color: "text-yellow-800",
       skills: [
         { name: "HTML", color: "bg-orange-500 text-white" },
         { name: "CSS", color: "bg-blue-500 text-white" },
         { name: "JavaScript", color: "bg-yellow-400 text-black" },
-        { name: "TypeScript", color: "bg-blue-600 text-white" }
       ]
     },
     {
       title: "Tools",
-      color: "text-orange-500",
+      color: "text-slate-700",
       skills: [
-        { name: "Notion", color: "bg-gray-800 text-white" },
-        { name: "Figma", color: "bg-purple-500 text-white" },
-        { name: "Zeplin", color: "bg-orange-400 text-white" },
-        { name: "Source Tree", color: "bg-blue-500 text-white" }
+        { name: "AWS RDS", color: "bg-green-700 text-white" },
+        { name: "AWS EC2", color: "bg-green-900 text-white" },
+        { name: "Travis CI", color: "bg-gray-800 text-white" },
+        { name: "Notion", color: "bg-gray-700 text-white" },
+        { name: "Figma", color: "bg-purple-800 text-white" },
+        { name: "WBS", color: "bg-orange-900 text-white" },
+        { name: "Confluence", color: "bg-blue-800 text-white" },
+        { name: "Jira", color: "bg-blue-700 text-white" }
       ]
     },
     {
       title: "VCS",
-      color: "text-orange-500",
+      color: "text-gray-800",
       skills: [
-        { name: "Git", color: "bg-orange-600 text-white" },
-        { name: "GitHub", color: "bg-gray-800 text-white" },
-        { name: "GitLab", color: "bg-orange-500 text-white" }
-      ]
-    },
-    {
-      title: "Mobile App",
-      color: "text-orange-500",
-      skills: [
-        { name: "React Native", color: "bg-blue-400 text-white" }
+        { name: "GitHub", color: "bg-gray-900 text-white" }
       ]
     },
     {
       title: "Deployment",
-      color: "text-orange-500",
+      color: "text-green-800",
       skills: [
-        { name: "Vercel", color: "bg-black text-white" },
-        { name: "Netlify", color: "bg-teal-500 text-white" }
+        { name: "TravisCI", color: "bg-green-800 text-white" },
+        { name: "CodeDeploy", color: "bg-slate-800 text-white" }
       ]
     }
   ];
@@ -71,7 +60,7 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">Skills</h2>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
-          <p className="text-gray-600 text-lg">한계까지 배우고 사용 해봤던 기술입니다</p>
+          <p className="text-gray-600 text-lg">사용 경험이 있거나 중점적으로 활용한 기술입니다</p>
         </div>
 
         <div className="bg-white rounded-3xl shadow-lg p-8">
