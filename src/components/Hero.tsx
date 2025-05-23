@@ -2,22 +2,22 @@
 const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden">
-      {/* Background with floral pattern */}
+      {/* Darker background with floral pattern */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-green-100 via-green-50 to-green-200"
+        className="absolute inset-0 bg-gradient-to-br from-green-500 via-green-700 to-green-800"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2367d79d' fill-opacity='0.08'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2367d79d' fill-opacity='0.14'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
       >
         {/* Decorative flowers */}
         <div className="absolute top-20 left-10 w-32 h-32 opacity-60">
-          <div className="w-full h-full rounded-full bg-green-200 animate-pulse"></div>
+          <div className="w-full h-full rounded-full bg-green-400 animate-pulse"></div>
         </div>
-        <div className="absolute top-40 right-20 w-24 h-24 opacity-40">
-          <div className="w-full h-full rounded-full bg-green-300 animate-pulse delay-1000"></div>
+        <div className="absolute top-40 right-20 w-24 h-24 opacity-50">
+          <div className="w-full h-full rounded-full bg-green-600 animate-pulse delay-1000"></div>
         </div>
-        <div className="absolute bottom-32 left-1/4 w-20 h-20 opacity-50">
-          <div className="w-full h-full rounded-full bg-green-400 animate-pulse delay-500"></div>
+        <div className="absolute bottom-32 left-1/4 w-20 h-20 opacity-70">
+          <div className="w-full h-full rounded-full bg-green-700 animate-pulse delay-500"></div>
         </div>
       </div>
 
@@ -44,3 +44,4 @@ const Hero = () => {
   );
 };
 export default Hero;
+

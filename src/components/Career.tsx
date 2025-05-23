@@ -19,22 +19,8 @@ const Career = () => {
         'e-CRF 서비스의 QA 담당',
         '기존 고객사와의 데이터 정합성 체크(Python 활용)'
       ],
-    },
-    {
-      period: '2024년 6월 ~ 7월',
-      company: '미국 UNLV 대학교 SW 중심대학 선정자',
-      description: [
-        '머신러닝 교육 이수',
-        'Uniprot 아미노산 데이터 기반 프로젝트 수행 (Logistic Regression, KNN, K-Mean, SVM, Neural Network - 상세내역은 프로젝트 참고)'
-      ],
-    },
-    {
-      period: '2024년 1월 ~ 6월',
-      company: '프로젝트몰입과제',
-      description: [
-        'PortfolioHub - 통합 포트폴리오 웹서비스 개발 (상세내역은 프로젝트 참고)'
-      ],
     }
+    // 2024년 6월 ~ 7월 (UNLV/머신러닝)와 2024년 1월~6월(프로젝트몰입과제)는 요청에 따라 삭제되었습니다.
   ];
 
   return (
@@ -76,3 +62,4 @@ const Career = () => {
   );
 };
 export default Career;
+
