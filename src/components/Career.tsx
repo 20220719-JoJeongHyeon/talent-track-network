@@ -2,55 +2,71 @@
 const Career = () => {
   const careers = [
     {
-      company: "Thingsflow",
-      period: "JAN 2023 - 현재",
-      role: "웹프론트 📱 웹/뉴티브오 기능 개발 및 유지 보수",
-      description: "HelloBot을 이용한 다양한 기업 서비스 개발",
-      achievements: [
-        "다양한 플랫폼에서 고객 응대 자동화 솔루션 개발",
-        "React/Vue.js 기반 프론트엔드 개발 및 유지보수",
-        "사용자 경험 개선을 위한 UI/UX 최적화"
-      ]
+      period: 'APRIL 2025 ~ 현재',
+      company: '신한 투자증권 프로 디지털 아카데미',
+      description: [
+        '교육기관 진행 중',
+        'AWS CLOUD 교육 이수',
+        '풀스택 과정 진행 중',
+        'MSA 교육 예정'
+      ],
+    },
+    {
+      period: '2024년 9월 ~ 12월',
+      company: '의료 데이터 관리 기업 (인턴십)',
+      description: [
+        'Java Lifray dxp 7.2 framework 기반 서비스 개발 참여',
+        'e-CRF 서비스의 QA 담당',
+        '기존 고객사와의 데이터 정합성 체크(Python 활용)'
+      ],
+    },
+    {
+      period: '2024년 6월 ~ 7월',
+      company: '미국 UNLV 대학교 SW 중심대학 선정자',
+      description: [
+        '머신러닝 교육 이수',
+        'Uniprot 아미노산 데이터 기반 프로젝트 수행 (Logistic Regression, KNN, K-Mean, SVM, Neural Network - 상세내역은 프로젝트 참고)'
+      ],
+    },
+    {
+      period: '2024년 1월 ~ 6월',
+      company: '프로젝트몰입과제',
+      description: [
+        'PortfolioHub - 통합 포트폴리오 웹서비스 개발 (상세내역은 프로젝트 참고)'
+      ],
     }
   ];
 
   return (
-    <section id="career" className="py-20 bg-gradient-to-b from-white to-teal-50">
+    <section id="career" className="py-20 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">Career</h2>
-          <div className="w-24 h-1 bg-teal-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-green-400 mx-auto"></div>
         </div>
-
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-teal-300"></div>
-
-          {careers.map((career, index) => (
-            <div key={index} className="relative flex items-start mb-12">
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-green-200"></div>
+          {careers.map((career, idx) => (
+            <div key={idx} className="relative flex items-start mb-12">
               {/* Timeline dot */}
-              <div className="absolute left-6 w-4 h-4 bg-teal-500 rounded-full border-4 border-white shadow-lg"></div>
-              
+              <div className="absolute left-6 w-4 h-4 bg-green-400 rounded-full border-4 border-white shadow-lg"></div>
               {/* Content */}
               <div className="ml-16 bg-white rounded-2xl shadow-lg p-8 w-full">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div>
-                    <h3 className="text-2xl font-bold text-teal-600 mb-2">{career.company}</h3>
+                    <h3 className="text-2xl font-bold text-green-600 mb-2">{career.company}</h3>
                     <p className="text-gray-600 mb-2">{career.period}</p>
-                    <p className="text-lg text-gray-800 font-medium">{career.role}</p>
                   </div>
                 </div>
-
-                <p className="text-gray-700 mb-6">{career.description}</p>
-
-                <div className="space-y-3">
-                  {career.achievements.map((achievement, achievementIndex) => (
-                    <div key={achievementIndex} className="flex items-start">
-                      <span className="text-teal-500 mr-3 mt-1">✓</span>
-                      <span className="text-gray-700">{achievement}</span>
-                    </div>
+                <ul className="text-gray-700 space-y-2">
+                  {career.description.map((desc, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-green-400 mr-2 mt-1">•</span>
+                      <span>{desc}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           ))}
@@ -59,5 +75,4 @@ const Career = () => {
     </section>
   );
 };
-
 export default Career;

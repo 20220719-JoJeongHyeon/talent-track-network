@@ -6,7 +6,7 @@ const Archive = () => {
     {
       title: "GitHub",
       icon: <Github className="w-12 h-12" />,
-      link: "github.com/yurim45",
+      link: "github.com/cisxo",
       description: [
         "프로젝트의 소스 코드가 있습니다.",
         "코딩 연습을 위해 작성한 코드가 있습니다."
@@ -15,7 +15,7 @@ const Archive = () => {
     {
       title: "Velog",
       icon: <div className="w-12 h-12 bg-emerald-500 rounded text-white flex items-center justify-center font-bold text-xl">V</div>,
-      link: "velog.io/@april_5",
+      link: "velog.io/@cisxo",
       description: [
         "공부한 것을 정리한 목적의 블로그입니다.",
         "개발하며 겪은 이야기를 공유합니다.",

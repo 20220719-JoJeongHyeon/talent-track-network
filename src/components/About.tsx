@@ -5,27 +5,28 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-gray-800 mb-4">About Me</h2>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-green-400 mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-8 border-white">
-              <div className="w-full h-full bg-gradient-to-br from-pink-200 to-blue-200 flex items-center justify-center">
-                <div className="text-6xl">👩‍💻</div>
-              </div>
+              <img 
+                src="/lovable-uploads/27a3a4bf-7bee-4d4b-bdd6-08c3f03bf51b.png" 
+                alt="조정현 프로필 사진"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-gray-800">
-              김 유 림 <span className="text-lg font-normal text-gray-600">웹 개발자(FE)</span>
+              조 정 현 <span className="text-lg font-normal text-gray-600">웹 개발자(FE)</span>
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
               함께 일 하고 싶은 개발자,<br />
               사용자 관점에서 개발하는 프론트엔드 개발자
             </p>
-            
             <div className="mt-8">
               <h4 className="text-xl font-semibold text-gray-800 mb-4">Contact.</h4>
               <p className="text-gray-700">
@@ -40,3 +41,4 @@ const About = () => {
 };
 
 export default About;
+
