@@ -13,7 +13,7 @@ const Projects = () => {
       title: "PortfolioHub",
       period: "2024. 01. 02 ~ 2024. 06. 19",
       subtitle: "통합 포트폴리오 웹서비스",
-      github: "https://github.com/20240218-Porthub/porthub",
+      github: "https://github.com/CISXO/porthub_web",
       website: "#",
       techStack: {
         기술스택: "Java, Spring boot, Spring Security, Thymeleaf",
