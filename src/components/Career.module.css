@@ -1,0 +1,7 @@
+.career-card-wrapper {
+  transition: box-shadow 0.3s;
+}
+.career-card-wrapper:hover {
+  box-shadow: 0 0 24px 4px #b0b0b0, 0 4px 32px 0 rgba(192,192,192,0.2);
+  cursor: pointer;
+} 

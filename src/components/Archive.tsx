@@ -1,4 +1,5 @@
-
+import React from 'react';
+import './Archive.css';
 import { Github } from 'lucide-react';
 
 const Archive = () => {
@@ -24,6 +25,10 @@ const Archive = () => {
     }
   ];
 
+  const handleItemClick = (url: string) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <section id="archive" className="py-20 bg-gradient-to-b from-purple-50 to-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +39,7 @@ const Archive = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {archiveItems.map((item, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="archive-item border border-gray-200 rounded-2xl bg-white shadow-lg p-8 hover:shadow-xl cursor-pointer" onClick={() => handleItemClick(`https://${item.link}`)}>
               <div className="flex flex-col items-center text-center">
                 <div className="mb-6 text-gray-700">
                   {item.icon}

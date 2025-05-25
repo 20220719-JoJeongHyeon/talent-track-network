@@ -36,7 +36,7 @@ const About = () => {
                 <span className="font-medium">Velog.</span> <a href="https://velog.io/@cisxo" target="_blank" rel="noopener noreferrer" className="underline hover:text-green-600">velog.io/@cisxo</a>
               </p>
               <p className="text-gray-700">
-                <span className="font-medium">Email.</span> icho0405@gmail.com
+                <span className="font-medium">Email.</span> cisxo2@gmail.com
               </p>
             </div>
           </div>

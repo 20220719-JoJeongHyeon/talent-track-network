@@ -1,4 +1,3 @@
-
 const Skills = () => {
   const skillCategories = [
     {
@@ -29,7 +28,6 @@ const Skills = () => {
       skills: [
         { name: "AWS RDS", color: "bg-green-700 text-white" },
         { name: "AWS EC2", color: "bg-green-900 text-white" },
-        { name: "Travis CI", color: "bg-gray-800 text-white" },
         { name: "Notion", color: "bg-gray-700 text-white" },
         { name: "Figma", color: "bg-purple-800 text-white" },
         { name: "WBS", color: "bg-orange-900 text-white" },
@@ -48,7 +46,7 @@ const Skills = () => {
       title: "Deployment",
       color: "text-green-800",
       skills: [
-        { name: "TravisCI", color: "bg-green-800 text-white" },
+        { name: "Travis CI", color: "bg-green-800 text-white" },
         { name: "CodeDeploy", color: "bg-slate-800 text-white" }
       ]
     }
@@ -63,25 +61,27 @@ const Skills = () => {
           <p className="text-gray-600 text-lg">사용 경험이 있거나 중점적으로 활용한 기술입니다</p>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-lg p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skillCategories.map((category, index) => (
-              <div key={index} className="space-y-4">
-                <h3 className={`text-xl font-bold ${category.color}`}>
-                  {category.title}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className={`px-3 py-1 rounded-full text-sm font-medium ${skill.color} hover:scale-105 transition-transform duration-200`}
-                    >
-                      {skill.name}
-                    </span>
-                  ))}
+        <div className="skills-card-wrapper transition-all duration-500 hover:shadow-2xl cursor-pointer">
+          <div className="bg-white rounded-3xl shadow-lg p-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {skillCategories.map((category, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 cursor-pointer space-y-4">
+                  <h3 className={`text-xl font-bold ${category.color}`}>
+                    {category.title}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill, skillIndex) => (
+                      <span
+                        key={skillIndex}
+                        className={`px-3 py-1 rounded-full text-sm font-medium ${skill.color} hover:scale-105 transition-transform duration-200`}
+                      >
+                        {skill.name}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

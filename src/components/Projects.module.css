@@ -1,0 +1,23 @@
+.project-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+.project-card-wrapper.hovered {
+  box-shadow: 0 0 24px 4px silver, 0 4px 32px 0 rgba(192,192,192,0.2);
+  border-color: silver !important;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.project-card-inner {
+  width: 100%;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s;
+} 

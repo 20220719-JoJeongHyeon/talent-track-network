@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* background: url('/forest-bg.gif') no-repeat center center; */
+  background-size: cover;
 }
 
 .logo {
@@ -39,4 +41,96 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Add new keyframes for forest breeze animation */
+@keyframes forestBreeze {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Update body styles to use the forest breeze animation */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(90deg, #1a472a, #2d5a3f, #1a472a);
+  background-size: 200% 100%;
+  animation: forestBreeze 15s ease infinite; */
+}
+
+.forest-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.leaf {
+  position: absolute;
+  animation: leafFloat 10s infinite ease-in-out;
+}
+
+.leaf1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.leaf2 {
+  top: 50%;
+  left: 50%;
+  animation-delay: 2s;
+}
+
+.leaf3 {
+  top: 30%;
+  left: 80%;
+  animation-delay: 4s;
+}
+
+@keyframes leafFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+.fog-layer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url('/images/fog.png') repeat-x;
+  animation: fogMove 60s linear infinite;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@keyframes fogMove {
+  0% { background-position-x: 0%; }
+  100% { background-position-x: 100%; }
+}
+
+.light-glow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.2), transparent 70%);
+  mix-blend-mode: soft-light;
+  z-index: -2;
+  pointer-events: none;
 }
