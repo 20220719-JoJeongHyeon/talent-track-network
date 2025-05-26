@@ -10,10 +10,10 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h3 className="text-2xl font-bold mb-4">April's world</h3>
+          <h3 className="text-2xl font-bold mb-4">CISXO</h3>
           <p className="text-gray-400 mb-6">함께 일하고 싶은 개발자가 되겠습니다.</p>
           <p className="text-gray-400">
-            © 2024 April's world. All rights reserved.
+            © 2025 May's world. All rights reserved.
           </p>
         </div>
       </div>

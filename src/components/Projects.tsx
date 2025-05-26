@@ -114,16 +114,15 @@ const Projects = () => {
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
-            <div className="flex-1 flex justify-center min-h-[700px] relative">
+            <div className="flex-1 flex justify-center min-h-[700px] relative overflow-hidden">
               <div
-                className={`project-card-wrapper transition-transform duration-500 ${isHovered ? 'hovered' : ''}`}
+                className={`project-card-wrapper transition-all duration-500 ${isHovered ? 'hovered' : ''}`}
                 style={{
-                  transform:
-                    isSliding && slideDirection === 'right'
-                      ? 'translateX(100%)'
-                      : isSliding && slideDirection === 'left'
+                  transform: isSliding
+                    ? slideDirection === 'right'
                       ? 'translateX(-100%)'
-                      : 'translateX(0)',
+                      : 'translateX(100%)'
+                    : 'translateX(0)',
                   opacity: isSliding ? 0.7 : 1,
                 }}
                 onMouseEnter={() => setIsHovered(true)}

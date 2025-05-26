@@ -4,50 +4,55 @@ const Skills = () => {
       title: "BackEnd",
       color: "text-green-700",
       skills: [
-        { name: "Java", color: "bg-green-900 text-white" },
-        { name: "Spring Boot", color: "bg-green-800 text-white" },
-        { name: "Spring Security", color: "bg-emerald-700 text-white" },
-        { name: "MariaDB", color: "bg-cyan-900 text-white" },
-        { name: "MySQL", color: "bg-blue-900 text-white" },
-        { name: "Mybatis", color: "bg-yellow-900 text-white" },
-        { name: "Jpa", color: "bg-purple-900 text-white" },
+        { name: "Java", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        { name: "Spring Boot", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+        { name: "Spring Security", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" }
+      ]
+    },{
+      title: "Database",
+      color: "text-green-700",
+      skills: [
+        { name: "MariaDB", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "MySQL", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { name: "Mybatis", image: "https://mybatis.org/images/mybatis-logo.png" },
+        { name: "Jpa", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        { name: "AWS RDS", image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
       ]
     },
     {
       title: "Basic",
       color: "text-yellow-800",
       skills: [
-        { name: "HTML", color: "bg-orange-500 text-white" },
-        { name: "CSS", color: "bg-blue-500 text-white" },
-        { name: "JavaScript", color: "bg-yellow-400 text-black" },
+        { name: "HTML", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { name: "CSS", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { name: "JavaScript", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       ]
     },
     {
       title: "Tools",
       color: "text-slate-700",
       skills: [
-        { name: "AWS RDS", color: "bg-green-700 text-white" },
-        { name: "AWS EC2", color: "bg-green-900 text-white" },
-        { name: "Notion", color: "bg-gray-700 text-white" },
-        { name: "Figma", color: "bg-purple-800 text-white" },
-        { name: "WBS", color: "bg-orange-900 text-white" },
-        { name: "Confluence", color: "bg-blue-800 text-white" },
-        { name: "Jira", color: "bg-blue-700 text-white" }
+        { name: "Notion", image: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" },
+        { name: "Figma", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        { name: "WBS", image: "https://cdn-icons-png.flaticon.com/512/2091/2091947.png" },
+        { name: "Confluence", image: "https://cdn.worldvectorlogo.com/logos/confluence-1.svg" },
+        { name: "Jira", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" }
       ]
     },
     {
       title: "VCS",
       color: "text-gray-800",
       skills: [
-        { name: "GitHub", color: "bg-gray-900 text-white" }
+        { name: "GitHub", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" }
       ]
     },
     {
       title: "Deployment",
       color: "text-green-800",
       skills: [
-        { name: "Travis CI", color: "bg-green-800 text-white" },
-        { name: "CodeDeploy", color: "bg-slate-800 text-white" }
+        { name: "AWS EC2", image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
+        { name: "Travis CI", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/travis/travis-plain.svg" },
+        { name: "CodeDeploy", image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" }
       ]
     }
   ];
@@ -69,14 +74,21 @@ const Skills = () => {
                   <h3 className={`text-xl font-bold ${category.color}`}>
                     {category.title}
                   </h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-4">
                     {category.skills.map((skill, skillIndex) => (
-                      <span
+                      <div
                         key={skillIndex}
-                        className={`px-3 py-1 rounded-full text-sm font-medium ${skill.color} hover:scale-105 transition-transform duration-200`}
+                        className="flex flex-col items-center group"
                       >
-                        {skill.name}
-                      </span>
+                        <img
+                          src={skill.image}
+                          alt={skill.name}
+                          className="w-12 h-12 object-contain mb-2 group-hover:scale-110 transition-transform duration-200"
+                        />
+                        <span className="text-sm text-gray-600 group-hover:text-gray-900 transition-colors">
+                          {skill.name}
+                        </span>
+                      </div>
                     ))}
                   </div>
                 </div>

@@ -18,7 +18,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-bold text-gray-800">
-            April's world
+            jeonghyeon's world
           </div>
           
           {/* Desktop Menu */}
